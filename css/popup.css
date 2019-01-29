@@ -1,0 +1,80 @@
+body {
+    background-color: white;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    opacity: 1;
+    overflow: hidden;
+    padding: 0;
+    white-space: nowrap;
+    width: fit-content;
+    width: -moz-fit-content;
+}
+
+#panes {
+    display: flex;
+    flex-direction: row-reverse;
+}
+#panes > div {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+body[dir="ltr"] #panes > div {
+    direction: ltr;
+}
+body[dir="rtl"] #panes > div {
+    direction: rtl;
+}
+#panes > div:nth-of-type(2) {
+    flex-shrink: 0;
+    font-family: "Noto Sans", sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 24em;
+}
+/**
+ Scroll bar to the left.
+ */
+body[dir="ltr"] #panes > div:nth-of-type(2) {
+    direction: rtl;
+    margin-right: 1px;
+}
+body[dir="rtl"] #panes > div:nth-of-type(2) {
+    direction: ltr;
+    margin-left: 1px;
+}
+#panes:not(.dfEnabled) > div:nth-of-type(2) {
+    display: none;
+}
+#panes > div:first-of-type {
+    min-width: 11em;
+    padding: 0;
+}
+p {
+    display: flex;
+    justify-content: center;
+}
+.fa-icon {
+    font-size: 120%;
+}
+.fa {
+    font-size: 120%;
+}
+#switch {
+    margin: 0.8em 0;
+}
+#switch .fa-icon {
+    fill: #0046ff;
+    cursor: pointer;
+    font-size: 700%;
+    margin: 0;
+    padding: 0;
+}
+#switch .fa-icon:hover {
+    opacity: 0.9;
+}
+body.off #switch .fa-icon {
+    fill: #ccc;
+}

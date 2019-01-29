@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/fontawesome-webfont.ttf') format('truetype');
+}
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+}
+body {
+    background-color: white;
+    color: black;
+    font: 14px sans-serif;
+}
+.hidden {
+    display: none;
+    height: 0;
+    visibility: hidden;
+    width: 0;
+}
+
+@media (max-width: 640px) {
+    button.custom.iconifiable > .fa {
+        font-size: 150%;
+        padding: 0;
+    }
+    button.custom.iconifiable > [data-i18n] {
+        display: none;
+    }
+}
