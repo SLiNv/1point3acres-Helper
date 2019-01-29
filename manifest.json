@@ -1,6 +1,6 @@
 {
     "name": "1point3acres Helper",
-    "version": "1.0",
+    "version": "0.1",
     "description" : "1point3acres Helper",
     "manifest_version": 2,
     "permissions": ["tabs", "*://*.1point3acres.com/*", "declarativeContent", "storage"],

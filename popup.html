@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <link rel="stylesheet" href="css/main.css" type="text/css">
   <link rel="stylesheet" href="css/fa-icons.css" type="text/css">
   <link rel="stylesheet" href="css/popup.css" type="text/css">
@@ -11,13 +12,16 @@
       outline: none;
     }
   </style>
-  <script src="popup.js"></script>
 </head>
 <body>
+  <div id="appinfo"><span id="appname">&nbsp;</span>&nbsp;<span id="version">&nbsp;</span></div>
+  <p>开启/关闭Helper</p>
+  <p>功能暂不可用，请disable插件以关闭</p>
   <div id="panes">
   <div class="tooltipContainer">
     <p id="switch" role="button" aria-label data-tip-position="under" tabindex="0"><span class="fa-icon">power-off</span></p>
 
+  <script src="js/popup.js"></script>
   <script src="js/fa-icons.js"></script>
 </body>
 </html>

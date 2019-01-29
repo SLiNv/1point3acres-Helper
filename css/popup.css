@@ -12,6 +12,19 @@ body {
     width: -moz-fit-content;
 }
 
+#appinfo {
+    align-items: flex-end;
+    background-color: #444;
+    border: 0;
+    color: #bbb;
+    display: flex;
+    font-size: smaller;
+    justify-content: center;
+    margin: 0;
+    padding: 1px 0;
+    width: 100%;
+}
+
 #panes {
     display: flex;
     flex-direction: row-reverse;
